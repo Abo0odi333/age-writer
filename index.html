@@ -13,6 +13,11 @@
         const username = document.getElementById('name').value;
         const userage = document.getElementById('age').value;
 
+        if (username === "" || userage === "") {
+        alert("يرجى ملء الاسم والعمر قبل الإرسال!");
+        return;
+        }
+
         document.getElementById("info").style.display = 'none';
         document.getElementById('resuelt').innerText = `مرحبا ${username}! عمرك ${userage}`;
         document.getElementById('resuelt').style.display = 'block';
