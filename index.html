@@ -1,0 +1,20 @@
+<div id="info">
+    <label for="name">الاسم :</label>
+    <input type="text" id="name" placeholder="اكتب اسمك هنا"><br><br>
+
+    <label for="age">العمر :</label>
+    <input type="number" id="age" placeholder="اكتب عمرك هنا"><br><br>
+
+    <button id="send" onclick="showresuelt()">ارسال</button>
+</div>
+<div id="resuelt" style="display: none;"></div>
+<script>
+    function showresuelt(){
+        const username = document.getElementById('name').value;
+        const userage = document.getElementById('age').value;
+
+        document.getElementById("info").style.display = 'none';
+        document.getElementById('resuelt').innerText = `مرحبا ${username}! عمرك ${userage}`;
+        document.getElementById('resuelt').style.display = 'block';
+    }
+</script>
