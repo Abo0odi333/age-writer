@@ -17,6 +17,9 @@
         alert("يرجى ملء الاسم والعمر قبل الإرسال!");
         return;
         }
+        if (5 >= Number(userage)) {
+        alert('انتبه من الديديز');
+        }
 
         document.getElementById("info").style.display = 'none';
         document.getElementById('resuelt').innerText = `مرحبا ${username}! عمرك ${userage}`;
